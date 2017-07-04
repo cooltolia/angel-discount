@@ -35,3 +35,29 @@
     text-decoration: none;
   }
 }
+
+@media (max-width: 768px) {
+  .secondary-nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 40px;
+    width: 100%;
+    padding: 20px 0 20px;
+    background-color: #000;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &.active {
+      display: flex;
+    }
+  }
+  
+  .secondary-nav__item {
+    padding: 0 30px;
+    margin-bottom: 45px;
+    
+  }
+  
+}

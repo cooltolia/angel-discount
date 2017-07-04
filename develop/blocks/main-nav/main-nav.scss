@@ -35,15 +35,7 @@
   
   &.active {
     color: #dcbc68;
-  }
-  
-  &:hover, 
-  &:focus {
-    text-decoration: none;
-    color: #dcbc68;
-  }
-  
-  &.clicked {
+    
     &::after {
       content: '';
       position: absolute;
@@ -56,5 +48,17 @@
       border-color: black transparent black transparent;
       border-style: solid;
     }
+  }
+  
+  &:hover, 
+  &:focus {
+    text-decoration: none;
+    color: #dcbc68;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav__list {
+    justify-content: center;
   }
 }

@@ -1,0 +1,56 @@
+.hamburger {
+  display: none;
+  position: absolute;
+  width: 41px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  
+  border-left: 1px solid #484848;
+  border-right: 1px solid #484848;
+
+}
+
+.hamburger__bars {
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hamburger__bar {
+   display: block;
+   width: 16px;
+   height: 2px;
+   background: #fff;
+   margin: 4px 0 0;
+   padding: 0;
+   transform: translate3d(0, 0, 0);
+   transition: all 333ms cubic-bezier(0.5, 0, 0, 1);
+  
+   &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.hamburger.checked .hamburger__bar:first-of-type {
+  transform: rotate(-135deg) translate(-4px, -3px);
+  background: #fff;
+}
+
+.hamburger.checked .hamburger__bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+.hamburger.checked .hamburger__bar:last-of-type {
+  transform: rotate(135deg) translate(-5px, 5px);
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
