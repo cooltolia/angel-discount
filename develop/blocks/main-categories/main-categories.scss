@@ -227,10 +227,6 @@
 }
 
 @media (max-width: 1100px) {
-
-  .main-categories__item-body {
-    padding: 0 10%;
-  }
   
   .main-categories__item {
     
@@ -249,7 +245,7 @@
   }
   
   .main-categories__text {
-    font-size: 36px;
+    font-size: 34px;
     margin-top: 10px;
     
     &--big {
@@ -306,11 +302,11 @@
     }
     
     & .decor::before {
-      left: -10px;
+      left: -20px;
     }
     
     & .decor::after {
-      right: -10px;
+      right: -20px;
     }
   }
   

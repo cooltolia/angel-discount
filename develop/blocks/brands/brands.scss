@@ -1,0 +1,28 @@
+.brands {
+  width: 100%;
+  max-width: 1250px;
+  padding: 70px 25px;
+  margin: 0 auto;
+  
+  font-family: $ptsans;
+}
+
+.brands__title {
+  margin: 0 10px;
+  
+  color: #242424;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 13px;
+  text-align: center;
+}
+
+.brands__img {
+  width: 100%;
+  
+  & img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,25 @@
+mixin be-slide(href, src, type, author, price)
+  +e.slide
+    +e.content
+      +e.A.img(href=href)
+        IMG(src=src)
+      +e.type !{type}
+      +e.A.author(href=href) #{author}
+      +e.price #{price}
+      +e.actions
+        +e.A.wishlist(href="#" title="Добавить в избранное")
+        +e.A.cart(href="#" title="Добавить в корзину")
+
+mixin best-offer()
+  +b.SECTION.best-offer
+    +e.H2.title Лучшее предложение
+    +e.slider
+      +be-slide("#", "images/best1.jpg", "Платье", "Alexander McQuee", "60 000р")
+      +be-slide("#", "images/best2.jpg", "Платье-кимоно<br><small>с комбинированным принтом</small>", "Alexander McQuee", "60 000р")
+      +be-slide("#", "images/best3.jpg", "Платье", "Alexander McQuee", "60 000р")
+      +be-slide("#", "images/best4.jpg", "Платье", "Alexander McQuee", "60 000р")
+      +be-slide("#", "images/best5.jpg", "Платье", "Alexander McQuee", "60 000р")
+      +be-slide("#", "images/best1.jpg", "Платье", "Alexander McQuee", "60 000р")
+      +be-slide("#", "images/best2.jpg", "Платье", "Alexander McQuee", "60 000р")
+      +be-slide("#", "images/best3.jpg", "Платье", "Alexander McQuee", "60 000р")
+      +be-slide("#", "images/best4.jpg", "Платье", "Alexander McQuee", "60 000р")

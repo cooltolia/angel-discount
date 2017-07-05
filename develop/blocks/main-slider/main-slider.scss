@@ -1,0 +1,119 @@
+.main-slider {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 320px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+.main-slider__inner {
+  width: 100%;
+  height: 100%;
+}
+
+.main-slider__slide {
+  width: 100%;
+  height: 100%;
+  
+  background-size: cover;
+  //background-position: center center;
+  background-image: url("../images/slide1.jpg")
+}
+
+.main-slider__dots {
+  bottom: 20px;
+  margin-bottom: 0;
+}
+
+.main-slider__dots .main-slider__dot { // какскад для переопределения bootstrap
+  width: 10px;
+  height: 10px;
+  margin: 0px;
+  margin-right: 18px;
+  background-color: #000;
+  border: none;
+  vertical-align: middle;
+  border-radius: 0;
+  
+  &.active {
+    background-color: $theme-color;
+  }
+}
+
+.main-slider .carousel-control {
+  width: 10%;
+}
+
+.main-slider__arrow {
+  position: absolute;
+  top: 40%;
+  margin-bottom: -18px;
+  display: block;
+  width: 30px;
+  height: 82px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  cursor: pointer;
+  
+  &--left {
+    margin-left: 27px;
+    background-image: url("../images/l-arrow.svg")
+    
+  }
+  
+  &--right {
+    right: 0;
+    margin-right: 27px;
+    background-image: url("../images/r-arrow.svg")
+  }
+}
+
+@media (max-width: 1400px) {
+  .main-slider {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main-slider {
+    height: 320px;
+  }
+  
+  .main-slider .carousel-control {
+    width: 8%;
+  }  
+  
+  .main-slider__arrow {
+    height: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-slider {
+    height: 220px;
+  }
+  
+  .main-slider__dots {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-slider {
+    height: 100px;
+  }
+  
+  .main-slider__arrow {
+    height: 35px;
+    width: 9px;
+    
+    &--left {
+      margin-left: 10px;
+    }
+    
+    &--right {
+      margin-right: 10px;
+    }
+  }
+}

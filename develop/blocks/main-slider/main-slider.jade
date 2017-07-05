@@ -1,0 +1,18 @@
+mixin main-slider()
+  +b.main-slider.carousel.slide#myCarousel(data-ride="carousel")
+    +e.OL.dots.carousel-indicators
+      +e.LI.dot.active(data-target="#myCarousel" data-slide-to="0")
+      +e.LI.dot(data-target="#myCarousel" data-slide-to="1")
+      +e.LI.dot(data-target="#myCarousel" data-slide-to="2")
+      +e.LI.dot(data-target="#myCarousel" data-slide-to="3")
+    +e.inner.carousel-inner
+      +e.slide.item.active
+      +e.slide.item
+      +e.slide.item
+      +e.slide.item
+    a.carousel-control.left(href="#myCarousel" data-slide="prev")
+      +e.SPAN.arrow.--left
+    a.carousel-control.right(href="#myCarousel" data-slide="next")
+      +e.SPAN.arrow.--right
+        
+        
