@@ -1,0 +1,35 @@
+mixin main-footer()
+  +b.FOOTER.main-footer
+    +e.column
+      +e.logo
+        IMG(src="images/logo1.png" width="120" height="88")
+      +e.logo-caption Это лучшее, что есть в модном Интернете!
+    +e.column
+      +e.title Способы оплаты
+      +e.cards
+        +e.card.--visa
+        +e.card.--mastercard
+    +e.column.--socials
+      +e.title Мы в соцсетях
+      +socials
+    +e.column
+      +e.nav
+        +e.inner-column
+          +e.title Клиентам
+          +e.UL.nav-list
+            +e.LI.nav-item
+              +e.A.nav-link(href="#") Помощь
+            +e.LI.nav-item
+              +e.A.nav-link(href="#") Заказы
+            +e.LI.nav-item
+              +e.A.nav-link(href="#") Доставка
+            +e.LI.nav-item
+              +e.A.nav-link(href="#") Контакты
+        +e.inner-column
+          +e.title Ангел Discount
+          +e.UL.nav-list
+            +e.LI.nav-item
+              +e.A.nav-link(href="#") О нас
+            +e.LI.nav-item
+              +e.A.nav-link(href="#") Вакансии
+  

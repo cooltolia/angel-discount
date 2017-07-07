@@ -1,0 +1,24 @@
+.socials {
+  font-size: 0;
+}
+
+.socials__link {
+  display: inline-block;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+.socials__link svg {
+  fill: #818181;
+  transition: fill 300ms ease;
+}
+
+.socials__link:hover svg {
+  fill: $theme-color;
+}
+
+@media (max-width: 768px) {
+  .socials {
+    display: none;
+  }
+}

@@ -140,6 +140,7 @@
       secondaryNav.toggleClass("active");
       hamburger.toggleClass("checked")
     });
+        
   });
 
 })(jQuery)

@@ -26,3 +26,14 @@
     height: auto;
   }
 }
+
+@media (max-width: 768px) {
+  .brands__title {
+    margin-bottom: 25px;
+  }
+  
+  .brands {
+    padding: 20px 10px;
+  }
+  
+}
