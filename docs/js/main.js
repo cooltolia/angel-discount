@@ -120,6 +120,10 @@
         
         
         
+        
+        
+        
+        
         $(".carousel").swipe({
     
       swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -132,6 +136,10 @@
     
     });
     
+        
+        
+        
+        
         var hamburger = $(".hamburger");
     var secondaryNav = $(".secondary-nav");
     
@@ -140,6 +148,8 @@
       secondaryNav.toggleClass("active");
       hamburger.toggleClass("checked")
     });
+        
+        
         
   });
 

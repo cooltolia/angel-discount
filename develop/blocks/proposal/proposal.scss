@@ -1,0 +1,40 @@
+.proposal {
+  max-width: 1300px;
+  padding: 0 25px;
+  margin: 0 auto 50px;
+  
+  font-family: $ptsans;
+}
+
+.proposal__title {
+  margin-bottom: 30px;
+  
+  color: #6e6e6e;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.proposal__content {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .proposal__content {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .proposal__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 420px) {
+  .proposal__title {
+    font-size: 22px;
+  }
+}

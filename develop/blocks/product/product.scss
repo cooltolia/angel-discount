@@ -1,0 +1,276 @@
+.product {
+  max-width: 1350px;
+  padding: 0 20px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  
+  font-family: $ptsans;
+}
+
+.product__column {
+  width: 45%;
+  flex: 1 1 auto;
+  
+  &:first-child {
+    margin-right: 5%;
+    width: 55%;
+    flex: 0 1 auto;
+  }
+}
+
+.product__share-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  color: #646464;
+  font-size: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.product__info {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.product__type {
+  margin-bottom: 12px;
+  
+  color: #6e6e6e;
+  font-size: 30px;
+}
+
+.product__name {
+  margin-bottom: 25px;
+  
+  color: #6e6e6e;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.product__price {
+  margin-bottom: 20px;
+  
+  font-size: 33px;
+  color: #6e6e6e;
+}
+
+.product__price-new {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.product__price-old {
+  display: inline-block;
+  color: $theme-color;
+}
+
+.product__size {
+  margin-bottom: 20px;
+}
+
+.product__row {
+  margin-bottom: 5px;
+  width: 100%;
+  clear: both;
+}
+
+.product__size-label {
+  float: left;
+  margin-right: 30px;
+  
+  color: #6e6e6e;
+  font-size: 18px;
+  font-weight: 400;
+  
+  &:last-child {
+    float: right;
+  }
+}
+
+.product__actions {
+  position: relative;
+  margin-bottom: 20px;
+  
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.product__actions-col {
+  float: left;
+  margin-right: 30px;
+}
+
+.product__buy {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100px;
+  height: 100px;
+  
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: $theme-color;
+  
+  transition: background-color 300ms ease;
+  
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 19px;
+    top: 30px;
+    
+    background-image: url("../images/cart-white.png")
+  }
+  
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: darken($theme-color, 20%);
+  }
+}
+
+.product__actions-text {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1;
+  color: #242424;
+
+  &--highlight {
+    color: $theme-color;
+  }
+  
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.product__wishlist {
+  position: relative;
+  bottom: -20px;
+  display: block;
+  padding-left: 17px;
+  
+  color: #6e6e6e;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 14px;
+  text-decoration: none;
+  
+  transition: all 300ms ease;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 0;
+    
+    background-image: url("../images/wishlist-grey.png");
+  }
+  
+  &:hover,
+  &:focus {
+    color: #242424;
+    text-decoration: none;
+    
+    &::before {
+      background-image: url("../images/wishlist.png");
+    }
+  }
+}
+
+.product__secondary {
+  margin: 0 0 10px;
+  
+  color: #585858;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.product__delivery {
+  display: block;
+  margin-top: 20px;
+  padding-top: 47px;
+  position: relative;
+  
+  color: $theme-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  
+  transition: color 300ms ease;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 74px;
+    height: 38px;
+    top: 0;
+    left: -5px;
+    
+    background-image: url("../images/delivery.png");
+    background-size: cover;
+  }
+  
+  &:hover,
+  &:focus {
+    color: darken($theme-color, 20%);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    display: block;
+  }
+  
+  .product__column {
+    width: 100%;
+    
+    &:first-child {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .product__size-label:last-child {
+    float: left;
+  }
+  
+  .product__actions-col {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .product__buy {
+    width: 250px;
+    height: 80px;
+    margin: 0 auto;
+    
+    &::before {
+      top: 20px;
+    }
+  }
+  
+  .product__secondary {
+    font-size: 14px;
+  }
+}

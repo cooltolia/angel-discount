@@ -1,0 +1,44 @@
+mixin product()
+  +b.ARTICLE.product
+    +e.column
+      +gallery
+      +e.share
+        +e.share-title Поделиться
+        +socials
+    +e.column
+      +e.info
+        +e.type Платье
+        +e.name
+          | Dolce & Gabbana
+          br
+          | hydrangea print dress
+        +e.price
+          +e.SPAN.price-new 60 000р
+          +e.S.price-old 160 000р
+        +e.size
+          +e.row
+            +e.LABEL.size-label(for='sizeSelect') Выберите размер
+            +e.LABEL.size-label(for='sizeSelect') Таблица размеров
+          +e.row
+            +e.SELECT.select.form-control#sizeSelect(name='sizes')
+              option(value='')  --- Выберите --- 
+              option(value='1461', selected) 40
+              option(value='1462') 42
+        +e.actions
+          +e.actions-col
+            +e.A.buy(href='#') Купить
+          +e.actions-col
+            +e.actions-text.--highlight Оформить заказ по телефону
+            +e.actions-text.--bold Свяжитесь с нами
+            +e.actions-text
+              | +7 (8652) 
+              b 75-54-53
+            +e.A.wishlist(href='#') Добавить в избранное
+        +e.P.secondary Описание
+        +e.P.secondary
+          | Dolce & Gabbana’s beautiful blossoming Ortensia AW17/18 collection depicts pretty flowers bursting in small, lacy florets. Seen here on this fitted dress, this green and lilac hydrangea printed frock from the Italian design duo will instantly brighten a winter wardrobe. Spun from the softest silk in Italy, it features a round neck, three-quarter length sleeves, a concealed rear zip fastening, a knee length and a rear central vent.
+      +e.P.secondary Цвет: HAC61
+      +e.P.secondary Сделано в Италии
+      +e.P.secondary ID дизайнерской модели: F62X5TGDF96
+      +e.P.secondary ID фирмы Farfetch: 12120564
+      +e.A.delivery(href='#') Доставка

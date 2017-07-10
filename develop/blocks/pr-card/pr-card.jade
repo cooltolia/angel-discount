@@ -1,0 +1,13 @@
+mixin pr-card(href, src, type, author, oldprice, newprice)
+  +b.pr-card
+    +e.body
+      +e.A.img(href=href)
+        IMG(src=src)
+      +e.type !{type}
+      +e.A.author(href=href) #{author}
+      +e.price
+        +e.S.old-price #{oldprice}
+        +e.SPAN.new-price #{newprice}
+      +e.actions
+        +e.A.wishlist(href="#" title="Добавить в избранное")
+        +e.A.cart(href="#" title="Добавить в корзину") Купить
