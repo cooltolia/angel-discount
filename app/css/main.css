@@ -684,12 +684,39 @@ th {
   font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif; }
 
 .brands__title {
-  margin: 0 10px;
+  margin: 25px auto;
   color: #242424;
   font-size: 25px;
   font-weight: 700;
   line-height: 13px;
   text-align: center; }
+
+.brands__list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+     -moz-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.brands__item {
+  width: 110px;
+  height: 110px;
+  margin: 10px; }
 
 .brands__img {
   width: 100%; }
@@ -700,9 +727,12 @@ th {
 
 @media (max-width: 768px) {
   .brands__title {
-    margin-bottom: 25px; }
+    margin: 15px auto; }
   .brands {
-    padding: 20px 10px; } }
+    padding: 20px 10px; }
+  .brands__item {
+    width: 70px;
+    height: 70px; } }
 
 .cat-content {
   width: auto;
@@ -1968,9 +1998,11 @@ th {
   outline: 2px solid transparent;
   -webkit-transition: outline 800ms ease;
   -moz-transition: outline 800ms ease;
-  transition: outline 800ms ease; }
+  transition: outline 800ms ease;
+  font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif; }
 
 .pr-card__body {
+  position: relative;
   min-height: 100%;
   display: -webkit-box;
   display: -moz-box;
@@ -1993,7 +2025,22 @@ th {
   .pr-card__body:hover {
     color: #242424; }
 
+.pr-card__discount {
+  position: absolute;
+  z-index: 5;
+  padding: 8px 12px;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #d8b55b; }
+
+.pr-card__discount:empty {
+  padding: 0; }
+
 .pr-card__img {
+  position: relative;
   display: block;
   margin: 0 auto 15px;
   width: 100%;

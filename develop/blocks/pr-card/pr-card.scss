@@ -4,9 +4,12 @@
   
   outline: 2px solid transparent;
   transition: outline 800ms ease;
+  
+  font-family: $ptsans;
 }
 
 .pr-card__body {
+  position: relative;
   min-height: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -21,7 +24,26 @@
   }
 }
 
+.pr-card__discount {
+  position: absolute;
+  z-index: 5;
+  padding: 8px 12px;
+  top: 0;
+  right: 0;
+  
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  
+  background-color: $theme-color;
+}
+
+.pr-card__discount:empty {
+  padding: 0;
+}
+
 .pr-card__img {
+  position: relative;
   display: block;
   margin: 0 auto 15px;
   width: 100%;

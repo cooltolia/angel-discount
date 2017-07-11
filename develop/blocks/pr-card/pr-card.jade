@@ -1,6 +1,8 @@
-mixin pr-card(href, src, type, author, oldprice, newprice)
+mixin pr-card(discount, href, src, type, author, oldprice, newprice)
   +b.pr-card
     +e.body
+      if (discount !== "" || discount !== undefined)
+        +e.SPAN.discount #{discount}
       +e.A.img(href=href)
         IMG(src=src)
       +e.type !{type}
