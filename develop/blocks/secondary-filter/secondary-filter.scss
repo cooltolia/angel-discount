@@ -1,0 +1,48 @@
+.secondary-filter {
+  max-width: 1300px;
+  padding: 0 25px;
+  margin: 0 auto 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  
+  font-family: $ptsans;
+}
+
+.secondary-filter__item {
+  margin-right: 30px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.secondary-filter__label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  
+  color: #242424;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.secondary-filter__select {
+  padding: 5px 45px 5px 25px;
+  
+  border: none;
+  background-color: #e4e4e4;
+  background-image: url("../images/arrow-down.png");
+  background-size: 9px 5px;
+  background-position: center right 5px;
+  background-repeat: no-repeat;
+  
+  color: #242424;
+  font-size: 16px;
+  line-height: 1;
+  
+  cursor: pointer;
+  appearance: none;
+}

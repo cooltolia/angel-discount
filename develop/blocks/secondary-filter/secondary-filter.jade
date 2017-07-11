@@ -1,0 +1,14 @@
+mixin secondary-filter()
+  +b.secondary-filter
+    +e.item
+      +e.LABEL.label(for="sortFilter") Сортировка
+      +e.SELECT.select#sortFilter
+        option(value="#" selected) По умолчанию
+        option(value="#") По цену
+        option(value="#") По качеству
+    +e.item
+      +e.LABEL.label(for="amountFilter") Показать
+      +e.SELECT.select#amountFilter
+        option(value="#" selected) 15
+        option(value="#") 30
+        option(value="#") 100

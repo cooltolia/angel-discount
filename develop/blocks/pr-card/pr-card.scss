@@ -93,7 +93,7 @@
 
 .pr-card__actions {
   margin: auto auto 0;
-  width: 60px;
+  width: 75px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -185,19 +185,5 @@
     margin-bottom: 15px;
     
     font-size: 17px;
-  }
-}
-
-@media (max-width: 768px) {
-  .pr-card {
-    width: 40%;
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 420px) {
-  .pr-card {
-    width: 100%;
-    max-width: 100%;
   }
 }

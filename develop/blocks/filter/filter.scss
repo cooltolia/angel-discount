@@ -1,0 +1,172 @@
+.filter {
+  width: 100%;
+  padding-left: 10px;
+  
+  font-family: $ptsans;
+}
+
+.filter__section-heading {
+  display: inline-block;
+  position: relative;
+  padding: 4px 5px;
+  
+  color: 242424;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  
+  cursor: pointer;
+  transition: all 300ms ease;
+  
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    transform: translateY(-65%) rotate(-45deg);  
+    left: -15px;
+    
+    border: 1px solid #242424;
+    border-right: 0;
+    border-top: 0;
+
+    transition: all 300ms ease;
+  }
+  
+  &.active {
+    color: $theme-color;
+    background-color: #242424;
+    
+    &::before {
+      width: 7px;
+      height: 2px;
+      border: none;
+      background-color: #242424;
+      transform: translateY(-50%) rotate(0deg);  
+    }
+  }
+}
+
+.filter__options {
+  display: none;
+  padding: 6px;
+  
+  &--in-cols {
+    column-count: 2;
+  }
+}
+
+.filter__section-heading.active + .filter__options {
+  display: block;
+}
+
+.filter__label {
+  position: relative;
+  padding-left: 18px;
+  
+  font-size: 16px;
+  font-weight: normal;
+  color: #9f9f9f;
+  
+  cursor: pointer;
+  
+  &:hover {
+    color: $theme-color;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    
+    border: 1px solid #9f9f9f;
+    
+    transition: border 300ms ease;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    
+    background-color: none;
+    
+    transition: background-color 300ms ease;
+  }
+}
+
+.filter__chbox:checked + .filter__label::before {
+  border-color: $theme-color;
+}
+
+.filter__chbox:checked + .filter__label::after {
+  background-color: $theme-color;
+}
+
+.filter__chbox {
+  display: none;
+}
+
+.price-range {
+  display: none;
+}
+
+.price-range__data {
+  margin: 10px auto 15px;
+  color: #3a3a3a;
+  font-size: 18px;
+}
+
+.price-range__input-min,
+.price-range__input-max {
+  width: 75px;
+  padding: 3px;
+  border: none;
+  margin-right: 3px;
+  background-color: #e1e1e1;
+}
+
+.price-range__currency,
+.price-range__separator, {
+  margin-right: 3px;
+}
+
+.filter .ui-slider-horizontal {
+  width: 100%;
+  height: 4px;
+  background-color: #242424;
+  border: none;
+  border-radius: 0;
+}
+
+.filter .ui-widget-header {
+  top: 0;
+  height: 100%;
+
+  background-color: $theme-color;
+}
+
+.filter .ui-slider-handle {
+  width: 4px;
+  height: 12px;
+  background-color: #242424;
+  border: none;
+  cursor: pointer;
+  margin-left: -2px;
+  border-radius: 0;
+  
+  &:first-of-type {
+    background-color: $theme-color;
+  }
+}

@@ -1,0 +1,201 @@
+mixin filter()
+  +b.filter
+    +e.form(action="#", method="get")
+      +e.sections
+        +e.section
+          +e.section-heading.active#category Категория
+          +e.options
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Bruki" name="categories[]" value="Bruki")
+              +e.LABEL.label(for="Bruki") Брюки
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Denim" name="categories[]" value="Denim")
+              +e.LABEL.label(for="Denim") Деним
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Komb" name="categories[]" value="Komb")
+              +e.LABEL.label(for="Komb") Комбнезоны
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Costume" name="categories[]" value="Costume")
+              +e.LABEL.label(for="Costume") Костюмы
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Kophti" name="categories[]" value="Kophti")
+              +e.LABEL.label(for="Kophti") Кофты
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Kurtki" name="categories[]" value="Kurtki")
+              +e.LABEL.label(for="Kurtki") Куртки
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Bel'e" name="categories[]" value="Bel'e")
+              +e.LABEL.label(for="Bel'e") Нижнее белье
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Palto" name="categories[]" value="Palto")
+              +e.LABEL.label(for="Palto") Пальто
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="" name="categories[]" value="Platia")
+              +e.LABEL.label(for="") Платья
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Platia" name="categories[]" value="Pliazh")
+              +e.LABEL.label(for="Platia") Пляжная одежда
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Trikotazh" name="categories[]" value="Trikotazh")
+              +e.LABEL.label(for="Trikotazh") Трикотаж
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Shorti" name="categories[]" value="Shorti")
+              +e.LABEL.label(for="Shorti") Шорты
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="Yubki" name="categories[]" value="Yubki")
+              +e.LABEL.label(for="Yubki") Юбки
+        +e.section
+          +e.section-heading#size Размер
+          +e.options
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="36" name="sizes[]" value="36")
+              +e.LABEL.label(for="36") 36
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="38" name="sizes[]" value="38")
+              +e.LABEL.label(for="38") 38
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="40" name="sizes[]" value="40")
+              +e.LABEL.label(for="40") 40
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="42" name="sizes[]" value="42")
+              +e.LABEL.label(for="42") 42
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="44" name="sizes[]" value="44")
+              +e.LABEL.label(for="44") 44
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="46" name="sizes[]" value="46")
+              +e.LABEL.label(for="46") 46
+        +e.section
+          +e.section-heading#designer Дизайнер
+          +e.options
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="dg" name="designers[]" value="D&G")
+              +e.LABEL.label(for="dg") D&G
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="dk" name="designers[]" value="Donna Karan")
+              +e.LABEL.label(for="dk") Donna Karan
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="fr" name="designers[]" value="Fratelli Rossetti")
+              +e.LABEL.label(for="fr") Fratelli Rossetti
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="ga" name="designers[]" value="Galliano")
+              +e.LABEL.label(for="ga") Galliano
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="ls" name="designers[]" value="Le Silla")
+              +e.LABEL.label(for="ls") Le Silla
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="pp" name="designers[]" value="Philipp Plein")
+              +e.LABEL.label(for="pp") Philipp Plein
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="ts" name="designers[]" value="Tod's")
+              +e.LABEL.label(for="ts") Tod's
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="za" name="designers[]" value="Zanotti")
+              +e.LABEL.label(for="za") Zanotti
+        +e.section
+          +e.section-heading#color Цвет
+          +e.options.--in-cols
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color1" name="colors[]" value="36")
+              +e.LABEL.label(for="color1") Cерый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color2" name="colors[]" value="38")
+              +e.LABEL.label(for="color2") Алый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color3" name="colors[]" value="40")
+              +e.LABEL.label(for="color3") Бежевый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color4" name="colors[]" value="42")
+              +e.LABEL.label(for="color4") Белый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color5" name="colors[]" value="44")
+              +e.LABEL.label(for="color5") Бирюзовый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color6" name="colors[]" value="46")
+              +e.LABEL.label(for="color6") Блуэт
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color7" name="colors[]" value="36")
+              +e.LABEL.label(for="color7") Бронзовый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color8" name="colors[]" value="38")
+              +e.LABEL.label(for="color8") Васильковый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color9" name="colors[]" value="40")
+              +e.LABEL.label(for="color9") Винный
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color10" name="colors[]" value="42")
+              +e.LABEL.label(for="color10") Голубой
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color11" name="colors[]" value="44")
+              +e.LABEL.label(for="color11") Графитовый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color12" name="colors[]" value="46")
+              +e.LABEL.label(for="color12") Желтый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color13" name="colors[]" value="36")
+              +e.LABEL.label(for="color13") Зеленый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color14" name="colors[]" value="38")
+              +e.LABEL.label(for="color14") Золотой
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color15" name="colors[]" value="40")
+              +e.LABEL.label(for="color15") Изумрудный
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color16" name="colors[]" value="42")
+              +e.LABEL.label(for="color16") Капуччино
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color17" name="colors[]" value="44")
+              +e.LABEL.label(for="color17") Коралловый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color18" name="colors[]" value="46")
+              +e.LABEL.label(for="color18") Леопардовый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color19" name="colors[]" value="40")
+              +e.LABEL.label(for="color19") Малиновый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color20" name="colors[]" value="42")
+              +e.LABEL.label(for="color20") Марсала
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color21" name="colors[]" value="44")
+              +e.LABEL.label(for="color21") Пудровый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color22" name="colors[]" value="46")
+              +e.LABEL.label(for="color22") Разноцветный
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color23" name="colors[]" value="36")
+              +e.LABEL.label(for="color23") Розовый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color24" name="colors[]" value="38")
+              +e.LABEL.label(for="color24") Сапфироввый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color25" name="colors[]" value="40")
+              +e.LABEL.label(for="color25") Серый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color26" name="colors[]" value="42")
+              +e.LABEL.label(for="color26") Синий
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color27" name="colors[]" value="44")
+              +e.LABEL.label(for="color27") Сиреневый
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color28" name="colors[]" value="46")
+              +e.LABEL.label(for="color28") Фуксия
+             +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color29" name="colors[]" value="42")
+              +e.LABEL.label(for="color29") Стальной
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color30" name="colors[]" value="44")
+              +e.LABEL.label(for="color30") Чернильный
+            +e.option 
+              +e.INPUT.chbox(type="checkbox" id="color31" name="colors[]" value="46")
+              +e.LABEL.label(for="color31") Черный
+        +e.section 
+          +e.section-heading.active#price Цена
+          +b.price-range.filter__options
+            +e.data
+              +e.INPUT.input-min(type='text', name='bfp_price_min', size='4')
+              +e.SPAN.currency р.
+              +e.SPAN.separator >
+              +e.INPUT.input-max(type='text', name='bfp_price_max', size='4')
+              +e.SPAN.currency р.
+            +e.slider
+              div#slider-range

@@ -31,10 +31,33 @@
   .proposal__title {
     font-size: 26px;
   }
+  
+  .proposal .pr-card {
+    width: 40%;
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 420px) {
   .proposal__title {
     font-size: 22px;
+  }
+  
+  .proposal .pr-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 420px) {
+  .pr-card {
+    width: 100%;
+    max-width: 100%;
   }
 }
