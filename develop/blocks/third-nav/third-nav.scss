@@ -10,13 +10,6 @@
   
   font-family: $ptsans;
   
-  transform: scaleY(0);
-  transform-origin: top left;
-  transition: transform 300ms ease;
-}
-
-.secondary-nav__item:hover .third-nav {
-  transform: scaleY(1);
 }
 
 .third-nav__inner {
@@ -72,11 +65,19 @@
   }
 }
 
-@media (max-width: 768px) {
+@media(min-width: 769px) {
+  .third-nav {
+    transform: scaleY(0);
+    transform-origin: top left;
+    transition: transform 300ms ease;
+  }
   
   .secondary-nav__item:hover .third-nav {
-    transform: none;
+    transform: scaleY(1);
   }
+}
+
+@media (max-width: 768px) {
   
   .third-nav {
     display: none;

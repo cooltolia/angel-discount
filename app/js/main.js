@@ -265,8 +265,8 @@
       
         if ($(window).width() <= '768'){
           
-          secondLink.on("click", function() {
-            
+          secondLink.on("click", function(e) {
+            e.preventDefault();
             if ($(this).siblings(thirdNav).is(":hidden")) {
               $(this).siblings(thirdNav).slideDown(200);
               $(this).addClass("active");

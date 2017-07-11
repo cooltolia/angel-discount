@@ -2656,26 +2656,7 @@ th {
   right: 0;
   padding: 25px 0 40px;
   background-color: #f3f3f3;
-  font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
-  -webkit-transform: scaleY(0);
-     -moz-transform: scaleY(0);
-      -ms-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-transform-origin: top left;
-     -moz-transform-origin: top left;
-      -ms-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transition: -webkit-transform 300ms ease;
-  transition: -webkit-transform 300ms ease;
-  -moz-transition: transform 300ms ease, -moz-transform 300ms ease;
-  transition: transform 300ms ease;
-  transition: transform 300ms ease, -webkit-transform 300ms ease, -moz-transform 300ms ease; }
-
-.secondary-nav__item:hover .third-nav {
-  -webkit-transform: scaleY(1);
-     -moz-transform: scaleY(1);
-      -ms-transform: scaleY(1);
-          transform: scaleY(1); }
+  font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif; }
 
 .third-nav__inner {
   padding: 0 50px;
@@ -2740,12 +2721,28 @@ th {
     color: #d8b55b;
     text-decoration: none; }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
+  .third-nav {
+    -webkit-transform: scaleY(0);
+       -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top left;
+       -moz-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: -webkit-transform 300ms ease;
+    -moz-transition: transform 300ms ease, -moz-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease, -moz-transform 300ms ease; }
   .secondary-nav__item:hover .third-nav {
-    -webkit-transform: none;
-       -moz-transform: none;
-        -ms-transform: none;
-            transform: none; }
+    -webkit-transform: scaleY(1);
+       -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1); } }
+
+@media (max-width: 768px) {
   .third-nav {
     display: none; }
   .third-nav__inner {
