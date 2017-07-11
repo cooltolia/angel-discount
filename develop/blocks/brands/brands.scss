@@ -29,6 +29,12 @@
   width: 110px;
   height: 110px;
   margin: 10px;
+  
+  transition: transform 300ms ease;
+}
+
+.brands__item:hover {
+  transform: scale(1.1);
 }
 
 .brands__img {

@@ -6,3 +6,4 @@ hamburger.on("click", function() {
   secondaryNav.toggleClass("active");
   hamburger.toggleClass("checked")
 });
+
