@@ -257,12 +257,9 @@
     
         
         
-        function thirdNavClick(){
-      
-      var secondLink = $(".secondary-nav__link");
+          var secondLink = $(".secondary-nav__link");
       var thirdNav = $(".third-nav");
     
-      
         if ($(window).width() <= '768'){
           
           secondLink.on("click", function(e) {
@@ -277,9 +274,6 @@
           });
           
         }
-    }
-    
-    $(window).on('load resize', thirdNavClick);
   });
 
 })(jQuery)
