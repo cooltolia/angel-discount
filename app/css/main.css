@@ -1071,9 +1071,22 @@ th {
           align-items: stretch;
   font-size: "PT Sans Narrow", Helvetica, Arial, sans-serif; }
 
+.gallery__main-image-item,
+.gallery__secondary-item {
+  display: block;
+  cursor: pointer; }
+  .gallery__main-image-item img,
+  .gallery__secondary-item img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%; }
+
 .gallery__main-image {
   position: relative;
-  width: 80%;
+  width: 86%;
   -webkit-box-flex: 1;
      -moz-box-flex: 1;
       -ms-flex: auto;
@@ -1091,18 +1104,6 @@ th {
   font-weight: 700;
   line-height: 1;
   background-color: #d8b55b; }
-
-.gallery__main-image-item,
-.gallery__secondary-item {
-  display: block; }
-  .gallery__main-image-item img,
-  .gallery__secondary-item img {
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    max-height: 100%;
-    width: auto;
-    max-width: 100%; }
 
 .gallery__main-image-item {
   height: 100%; }
@@ -1675,11 +1676,21 @@ th {
       -ms-flex: none;
           flex: none;
   width: 129px;
-  height: 89px; }
-  .main-header__logo img {
+  height: 89px;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  -webkit-transition: background-image 300ms ease;
+  -moz-transition: background-image 300ms ease;
+  transition: background-image 300ms ease;
+  /*  & img {
     width: 100%;
     max-width: 100%;
-    height: auto; }
+    height: auto;
+  }*/ }
+  .main-header__logo:hover {
+    background-image: url("../images/logo-gold.png"); }
+  .main-header__logo:active {
+    background-image: url("../images/logo-bright.png"); }
 
 .main-header__container {
   position: relative;
@@ -2520,12 +2531,20 @@ th {
     height: 14px;
     left: 0;
     top: 0;
+    -webkit-transition: background-image 300ms ease;
+    -moz-transition: background-image 300ms ease;
+    transition: background-image 300ms ease;
     background-image: url("../images/wishlist-grey.png"); }
   .product__wishlist:hover, .product__wishlist:focus {
-    color: #242424;
+    color: #d8b55b;
     text-decoration: none; }
     .product__wishlist:hover::before, .product__wishlist:focus::before {
-      background-image: url("../images/wishlist.png"); }
+      background-image: url("../images/wishlist-gold.png"); }
+  .product__wishlist:active {
+    color: #e7d199;
+    text-decoration: none; }
+    .product__wishlist:active::before {
+      background-image: url("../images/wishlist-bright.png"); }
 
 .product__secondary {
   margin: 0 0 10px;
@@ -2554,10 +2573,15 @@ th {
     top: 0;
     left: -5px;
     background-image: url("../images/delivery.png");
-    background-size: cover; }
+    background-size: cover;
+    -webkit-transition: background-image 300ms ease;
+    -moz-transition: background-image 300ms ease;
+    transition: background-image 300ms ease; }
   .product__delivery:hover, .product__delivery:focus {
     color: #a68227;
     text-decoration: none; }
+  .product__delivery:active::before {
+    background-image: url("../images/delivery-bright.png"); }
 
 @media (max-width: 768px) {
   .product {

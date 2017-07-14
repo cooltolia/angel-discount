@@ -23,11 +23,24 @@
   width: 129px;
   height: 89px;
   
-  & img {
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  
+  transition: background-image 300ms ease;
+  
+  &:hover {
+    background-image: url("../images/logo-gold.png");
+  }
+  
+  &:active {
+    background-image: url("../images/logo-bright.png");
+  }
+  
+/*  & img {
     width: 100%;
     max-width: 100%;
     height: auto;
-  }
+  }*/
 }
 
 .main-header__container {

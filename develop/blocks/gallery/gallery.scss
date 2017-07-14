@@ -8,9 +8,25 @@
   font-size: $ptsans;
 }
 
+.gallery__main-image-item,
+.gallery__secondary-item, {
+  display: block;
+  
+  cursor: pointer;
+  
+  & img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
 .gallery__main-image {
   position: relative;
-  width: 80%;
+  width: 86%;
   flex: auto;
   margin-right: 10px;
 }
@@ -30,19 +46,6 @@
   background-color: $theme-color;
 }
 
-.gallery__main-image-item,
-.gallery__secondary-item, {
-  display: block;
-  
-  & img {
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    max-height: 100%;
-    width: auto;
-    max-width: 100%;
-  }
-}
 
 .gallery__main-image-item {
   height: 100%;

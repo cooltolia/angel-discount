@@ -179,16 +179,27 @@
     left: 0;
     top: 0;
     
+    transition: background-image 300ms ease;
+    
     background-image: url("../images/wishlist-grey.png");
   }
   
   &:hover,
   &:focus {
-    color: #242424;
+    color: $theme-color;
     text-decoration: none;
     
     &::before {
-      background-image: url("../images/wishlist.png");
+      background-image: url("../images/wishlist-gold.png");
+    }
+  }
+    
+  &:active {
+    color: lighten($theme-color, 15%);
+    text-decoration: none;
+    
+    &::before {
+      background-image: url("../images/wishlist-bright.png");
     }
   }
 }
@@ -225,12 +236,18 @@
     
     background-image: url("../images/delivery.png");
     background-size: cover;
+    
+    transition: background-image 300ms ease;
   }
   
   &:hover,
   &:focus {
     color: darken($theme-color, 20%);
     text-decoration: none;
+  }
+  
+  &:active::before {
+    background-image: url("../images/delivery-bright.png");
   }
 }
 
