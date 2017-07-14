@@ -5,9 +5,11 @@ mixin main-header()
         +e.A.logo(href="index.html")
           IMG(src="images/logo.png")
         +e.icons
-          +e.A.icon.--pointer(href="#")
+          +e.A.icon.--pointer.--js-showSmall(href="#")
           +e.A.icon.--wishlist(href="#")
           +e.A.icon.--cart(href="#")
+        +e.contacts-content-m.
+          +7 (8652) <b>75-54-53, 26-39-02</b><br> г. Ставрополь, ул. Ленина, 379
         +e.m-info
           +e.A.make-order(href="#") Оформить заказ
           +e.tel +7 (8652) <b>75-54-53</b>
@@ -17,7 +19,10 @@ mixin main-header()
             +e.A.make-order(href="#") Оформить заказ
           +e.block-row
             +e.tel +7 (8652) <b>75-54-53</b>
-            +e.contacts +7 (8652) <b>75-54-53, 26-39-02</b><br> г. Ставрополь, ул. Ленина, 379
+            +e.contacts 
+              +e.icon.--pointer.--js-show
+              +e.contacts-content.
+                +7 (8652) <b>75-54-53, 26-39-02</b><br> г. Ставрополь, ул. Ленина, 379
             +e.A.icon.--wishlist(href="#")
             +e.A.icon.--cart(href="#")
     +e.row.--dark

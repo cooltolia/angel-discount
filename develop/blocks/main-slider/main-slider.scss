@@ -17,7 +17,19 @@
   
   background-size: cover;
   //background-position: center center;
-  background-image: url("../images/slide1.jpg")
+  background-image: url("../images/slide1.jpg");
+    
+  &:nth-child(2) {
+    background-image: url("../images/slide2.jpg");
+  }
+    
+  &:nth-child(3) {
+    background-image: url("../images/slide3.jpg");
+  }
+    
+  &:nth-child(4) {
+    background-image: url("../images/slide4.jpg");
+  }
 }
 
 .main-slider__dots {

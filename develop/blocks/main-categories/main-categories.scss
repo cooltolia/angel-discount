@@ -30,9 +30,28 @@
   
   text-decoration: none;
   
+  transition: background 3000ms ease;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    
+    transition: background-color 300ms ease;
+    
+    background-color: rgba(black, 0);
+  }
+  
   &:hover, 
   &:focus {
     text-decoration: none;
+    
+    &::before {
+      background-color: rgba(black, 0.3);
+    }
   }
   
   & .decor::before,
@@ -63,36 +82,68 @@
 
 .main-categories__row--low .main-categories__item:nth-child(1) {
   background-image: url("../images/cat-low1.jpg");
+  
+ /* &:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.3) 0%,rgba(0,0,0,0.3) 100%), url("../images/cat-low1.jpg");
+  }*/
 }
 
 .main-categories__row--low .main-categories__item:nth-child(2) {
   background-image: url("../images/cat-low2.jpg");
+  
+  /*&:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.3) 0%,rgba(0,0,0,0.3) 100%), url("../images/cat-low2.jpg");
+  }*/
 }
 
 .main-categories__row--low .main-categories__item:nth-child(3) {
   background-image: url("../images/cat-low3.jpg");
+  
+  /*&:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.3) 0%,rgba(0,0,0,0.3) 100%), url("../images/cat-low3.jpg");
+  }*/
 }
 
 .main-categories__row--low .main-categories__item:nth-child(4) {
   background-image: url("../images/cat-low4.jpg");
   margin-right: 0;
+  
+  /*&:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.3) 0%,rgba(0,0,0,0.3) 100%), url("../images/cat-low4.jpg");
+  }*/
 }
 
 .main-categories__row--high .main-categories__item:nth-child(1) {
   background-image: url("../images/cat-high1.jpg");
+  
+  /*&:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.3) 0%,rgba(0,0,0,0.3) 100%), url("../images/cat-high1.jpg");
+  }*/
 }
 
 .main-categories__row--high .main-categories__item:nth-child(2) {
   background-image: url("../images/cat-high2.jpg");
+  
+  /*&:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.3) 0%,rgba(0,0,0,0.3) 100%), url("../images/cat-high2.jpg");
+  }*/
 }
 
 .main-categories__row--high .main-categories__item:nth-child(3) {
   background-image: url("../images/cat-high3.jpg");
+  
+  /*&:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.3) 0%,rgba(0,0,0,0.3) 100%), url("../images/cat-high3.jpg");
+  }*/
 }
 
 .main-categories__row--high .main-categories__item:nth-child(4) {
   background-image: url("../images/cat-high4.jpg");
   margin-right: 0;
+  
+  /*&:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.3) 0%,rgba(0,0,0,0.3) 100%), url("../images/cat-high4.jpg");
+  }*/
 }
 
 .main-categories__item-body {

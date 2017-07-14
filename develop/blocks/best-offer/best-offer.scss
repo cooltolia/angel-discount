@@ -39,10 +39,24 @@
 }
 
 .best-offer__img {
+  position: relative;
   display: block;
   margin: 0 auto 15px;
   width: 100%;
   height: auto;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(white, 0);
+    
+    transition: background-color 300ms ease; 
+  }
   
   & img {
     display: block;
@@ -52,6 +66,10 @@
     height: auto;
     max-height: 100%;
   }
+}
+
+.best-offer__content:hover .best-offer__img::before {
+  background-color: rgba(white, 0.2);
 }
 
 .best-offer__type {
@@ -110,8 +128,14 @@
   
   background-image: url("../images/wishlist-grey.png");
   
+  transition: background 300ms ease;
+    
   &:hover {
-    background-image: url("../images/wishlist.png");
+    background-image: url("../images/wishlist-gold.png");
+  }
+
+  &:active {
+    background-image: url("../images/wishlist-bright.png");
   }
 }
 
@@ -121,8 +145,14 @@
   
   background-image: url("../images/cart-grey.png");
   
+  transition: background 300ms ease;
+    
   &:hover {
-    background-image: url("../images/cart.png");
+    background-image: url("../images/cart-gold.png");
+  }
+
+  &:active {
+    background-image: url("../images/cart-bright.png");
   }
 }
 
